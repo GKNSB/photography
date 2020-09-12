@@ -1,0 +1,6 @@
+- name: Flickr
+  favicon: fa-flickr
+  url: https://www.flickr.com/photos/gknsb/
+- name: Instagram
+  favicon: fa-instagram
+  url: https://www.instagram.com/manos.gz/

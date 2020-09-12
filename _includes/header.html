@@ -1,0 +1,40 @@
+
+<div id="sidebar-wrapper">
+<aside class="sidebar-left-collapse sidebar-wrapper">
+	<p class="head"><a href="{{ site.baseurl }}">Manos Ch</a></p>
+    <div class="sidebar-links">
+
+        <div class="link-blue">
+            <a>
+                <i class="fa fa-camera"></i>Photography
+            </a>
+            <ul class="sub-links">
+                {% for cat in site.data.photography %}
+                <li><a id="{{ cat.name }}" class="cat-link" href="portfolio#{{ cat.name }}" data-id="{{ cat.key }}">{{ cat.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="link-blue">
+            <a>
+                <i class="fa fa-globe"></i>Countries
+            </a>
+            <ul class="sub-links">
+                {% for cat in site.data.travels %}
+                <li><a id="{{ cat.name }}" class="cat-link" href="portfolio#{{ cat.name }}" data-id="{{ cat.key }}">{{ cat.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="link-green">
+            <a>
+                <i class="fa fa-map-marker"></i>Find me on
+            </a>
+            <ul class="sub-links">
+                {% for link in site.data.links %}
+                <li><a href="{{ link.url }}"><i class="fa {{ link.favicon }}"></i> {{ link.name }}</a></li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</aside>
+</div>
